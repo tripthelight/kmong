@@ -1,0 +1,38 @@
+.contents .info {
+  margin: 10em 0 9em 0;
+}
+.contents .info h2,
+.contents .info p,
+.contents .info .btn-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents .info h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+.contents .info p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  font-family: "Open Sans", sans-serif;
+  margin: 2em 0 4em 0;
+}
+.contents .info .btn-block {
+  
+}
+.contents .info .btn-block a {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #2E4453;
+  font-weight: 600;
+  padding: 12px 35px;
+  border: solid 1px #d5e0e7;
+  border-radius: 4px;
+  margin: 0 0.5em;
+}
+
+

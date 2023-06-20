@@ -1,0 +1,23 @@
+#infoWrap {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  h1 {
+    font-size: 20px;
+    color: #000;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    dl {
+      display: flex;
+      align-items: center;
+      dt, dd {
+        color: #000;
+        font-size: 16px;
+      }
+    }
+  }
+}

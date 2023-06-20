@@ -1,0 +1,7 @@
+module.exports = (_delay) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      return resolve();
+    }, _delay);
+  });
+};

@@ -1,0 +1,29 @@
+/**
+  head
+*/
+header {
+  padding: 20px 20px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 a {
+  font-size: 29px;
+  color: #000;
+}
+header h1 a:hover {
+  color: #6e6e6e;
+}
+header h2 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  color: rgb(85, 127, 43);
+}

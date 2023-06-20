@@ -1,0 +1,96 @@
+@import url(../../common/css/common.css);
+#root,
+.image-list,
+body,
+html {
+  background-color: #fff;
+}
+#root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  cursor: grab;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#root::-webkit-scrollbar {
+  display: none;
+}
+.image-list {
+  width: 100%;
+  height: 100%;
+}
+.image-list .list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  cursor: pointer;
+  line-height: 0;
+  transform-origin: center center;
+  z-index: 1;
+}
+.image-list .list img {
+  width: 100%;
+  height: auto;
+}
+.image-list .list.active {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9000;
+}
+.image-list .list.active img {
+  width: 40%;
+  height: auto;
+  padding: 0 20px;
+}
+.image-list .list.active .info-list {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.image-list .list.active .info-list span {
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  text-align: left;
+}
+.image-list .list.active .info-list ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  text-align: left;
+  padding-right: 50px;
+}
+.image-list .list.active .info-list ul li {
+  padding: 10px;
+}
+.image-list .list.active .info-list .btn-close {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/svg/home-button-icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+#wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+}
+#wrap .contents {
+  flex-grow: 1;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#wrap .contents .list {
+}

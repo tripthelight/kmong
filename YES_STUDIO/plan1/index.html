@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기획1</title>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="bg"></div>
+    <!-- // background -->
+
+    <!-- 이미지 리스트 -->
+    <div class="floating-list">
+      <!-- 하나의 시퀀스 -->
+      <div class="sequence">
+        <!--
+          * 메인화면을 떠다니는 이미지
+          * data-link : 이미지 링크
+          * data-color : 이미지 링크 컬러
+        -->
+        <img src="./images/main1/1000x1000.jpg" alt="logo" class="img-home" data-link="이미지 링크" data-color="#FFF" />
+
+        <!-- 메인화면을 떠다니는 이미지를 클릭했을 때 나오는 이미지 리스트들 -->
+        <div class="sequence-list">
+          <img src="./images/main1/sequence/sequence_1000x1000.jpg" alt="image1" data-link="이미지 링크 1" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_700x500.jpg" alt="image2" data-link="이미지 링크 2" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_300x600.jpg" alt="image3" data-link="이미지 링크 3" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_500x300.jpg" alt="image4" data-link="이미지 링크 4" data-color="#000" />
+        </div>
+      </div>
+      <!-- // 하나의 시퀀스 -->
+
+      <div class="sequence">
+        <img src="./images/main2/700x500.jpg" alt="logo" class="img-home" data-link="이미지 링크" data-color="#FFF" />
+        <div class="sequence-list">
+          <img src="./images/main1/sequence/sequence_1000x1000.jpg" alt="image1" data-link="이미지 링크 1" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_700x500.jpg" alt="image2" data-link="이미지 링크 2" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_300x600.jpg" alt="image3" data-link="이미지 링크 3" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_500x300.jpg" alt="image4" data-link="이미지 링크 4" data-color="#000" />
+        </div>
+      </div>
+      <div class="sequence">
+        <img src="./images/main3/300x600.jpg" alt="logo" class="img-home" data-link="이미지 링크" data-color="#FFF" />
+        <div class="sequence-list">
+          <img src="./images/main1/sequence/sequence_1000x1000.jpg" alt="image1" data-link="이미지 링크 1" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_700x500.jpg" alt="image2" data-link="이미지 링크 2" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_300x600.jpg" alt="image3" data-link="이미지 링크 3" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_500x300.jpg" alt="image4" data-link="이미지 링크 4" data-color="#000" />
+        </div>
+      </div>
+      <div class="sequence">
+        <img src="./images/main4/500x300.jpg" alt="logo" class="img-home" data-link="이미지 링크" data-color="#FFF" />
+        <div class="sequence-list">
+          <img src="./images/main1/sequence/sequence_1000x1000.jpg" alt="image1" data-link="이미지 링크 1" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_700x500.jpg" alt="image2" data-link="이미지 링크 2" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_300x600.jpg" alt="image3" data-link="이미지 링크 3" data-color="#000" />
+          <img src="./images/main1/sequence/sequence_500x300.jpg" alt="image4" data-link="이미지 링크 4" data-color="#000" />
+        </div>
+      </div>
+    </div>
+    <!-- // 이미지 리스트 -->
+
+    <!-- 로딩 -->
+    <div class="loading svg-loader">
+      <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+        <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
+        <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle>
+      </svg>
+    </div>
+    <!-- // 로딩 -->
+
+    <script>
+      const SLIDE_SPEED = 4; // index 화면에서 로고의 움직임 속도를 이 값으로 설정 - 높을수록 빠름
+    </script>
+  </body>
+</html>

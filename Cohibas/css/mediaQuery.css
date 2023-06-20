@@ -1,0 +1,17 @@
+@media (max-width: 1370px) {
+  .list dl {
+    flex: 0 1 calc(100% / 3 - 20px);
+  }
+}
+
+@media (max-width: 1070px) {
+  .list dl {
+    flex: 0 1 calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 740px) {
+  .list dl {
+    flex: 1 1 100%;
+  }
+}

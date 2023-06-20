@@ -1,0 +1,227 @@
+/**
+  * common
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/**
+  * container
+*/
+#container {
+  background-color: #23275a;
+}
+
+/**
+  * header
+*/
+header {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+header .icon {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+header .icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+header .icon a:first-child {
+  margin-left: 0;
+}
+header .btn-inquiry {
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 1000px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+  * contents
+*/
+.contents {
+}
+
+/**
+  * youtube
+*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+  * 고객한마디
+*/
+.customers {
+  background-color: #fff;
+  margin-top: 40px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.customers .tit {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+.customers .tit span {
+  flex-grow: 1;
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+}
+.customers .tit a {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+}
+.customers .tit a::before,
+.customers .tit a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
+.customers .tit a::before {
+  width: 2px;
+  height: 12px;
+}
+.customers .tit a::after {
+  width: 12px;
+  height: 2px;
+}
+.customers .list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+.customers .list dl {
+  border: 2px solid #d7d7d7;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.customers .list dl:first-child {
+  margin-top: 0;
+}
+.customers .list dt,
+.customers .list dd {
+  font-size: 16px;
+  color: #000;
+}
+.pagenation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.pagenation a.btn-prev,
+.pagenation a.btn-next {
+  position: relative;
+  width: 21px;
+  height: 21px;
+}
+.pagenation a.btn-prev {
+  margin-right: 10px;
+}
+.pagenation a.btn-next {
+  margin-left: 10px;
+}
+.pagenation a.btn-prev::before,
+.pagenation a.btn-prev::after,
+.pagenation a.btn-next::before,
+.pagenation a.btn-next::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
+.pagenation a.btn-prev::before {
+  width: 1px;
+  height: 6px;
+  transform: rotate(45deg);
+  margin-top: -2px;
+}
+.pagenation a.btn-prev::after {
+  width: 1px;
+  height: 6px;
+  transform: rotate(-45deg);
+  margin-top: 2px;
+}
+.pagenation a.btn-next::before {
+  width: 1px;
+  height: 6px;
+  transform: rotate(-45deg);
+  margin-top: -2px;
+}
+.pagenation a.btn-next::after {
+  width: 1px;
+  height: 6px;
+  transform: rotate(45deg);
+  margin-top: 2px;
+}
+.pagenation span {
+  display: inline-block;
+  margin-left: 5px;
+}
