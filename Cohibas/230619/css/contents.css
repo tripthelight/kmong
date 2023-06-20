@@ -13,6 +13,9 @@
   min-height: 100vh;
   margin: 0 auto;
   background-color: #FFF;
+  border-left: solid 1px #cedfea;
+  border-right: solid 1px #cedfea;
+  box-sizing: border-box;
 }
 .contents .info {
   padding: 10em 15px 9em;
@@ -168,14 +171,25 @@
 .contents .project-list ul li .btn-list a + a {
   margin-left: 10px;
 }
+.contents .project-list ul li .tags,
+.contents .project-list ul li .tags span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .contents .project-list ul li .tags {
   margin-top: 2em;
+  flex-wrap: wrap;
 }
 .contents .project-list ul li .tags span {
   color: #9eb1bd;
   background-color: #ECEFF1;
   padding: 0.5em 1.5em;
-  display: inline-block;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+.contents .project-list ul li .tags span:last-child {
+  margin-right: 0;
 }
 .contents .project-list ul li .inner {
   margin: 0 0 0 5em;

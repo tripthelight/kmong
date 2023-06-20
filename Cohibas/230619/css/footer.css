@@ -1,4 +1,56 @@
 footer {
   width: 100%;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
+  padding: 1em 0;
+  border-top: 1px solid #efefef;
+}
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a.btn-copyright {
+  color: #337ab7;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+  padding: 10px 15px;
+  margin-left: 8.3%;
+}
+footer a.btn-top {
+  position: relative;
+  width: 27px;
+  height: 42px;
+  margin-right: 8.3%;
+}
+footer a.btn-top::before,
+footer a.btn-top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3px;
+  height: 20px;
+  background-color: #C8D7E1;
+}
+footer a.btn-top::before {
+  margin-left: 6px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+footer a.btn-top::after {
+  margin-left: -6px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+footer a.btn-top span {
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  color: transparent;
 }

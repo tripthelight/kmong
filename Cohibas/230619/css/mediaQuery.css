@@ -1,4 +1,37 @@
+@media (max-width: 1920px) {
+  .contents {
+    width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .contents {
+    width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .contents {
+    width: 750px;
+  }
+  .contents .project-list ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .contents .project-list ul li {
+    width: 100%;
+  }
+  .contents .project-list ul.type-right {
+    flex-direction: column;
+  }
+  .contents .project-list ul li + li {
+    margin-top: 1em;
+    padding-left: calc(5em + 20px);
+  }
+}
 @media (max-width: 768px) {
+  .contents {
+    width: 100%;
+  }
   .contents .info .btn-block {
     flex-wrap: wrap;
     flex-direction: column;
@@ -6,19 +39,38 @@
   .contents .info .btn-block a + a {
     margin-top: 0.5em;
   }
-}
-@media (min-width: 768px) {
-  .contents {
-    width: 750px;
+  .contents .project-list ul li .inner {
+    margin: 0;
+  }
+  .contents .project-list ul li + li {
+    padding-left: 20px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer a.btn-copyright {
+    margin-left: 0;
+  }
+  footer a.btn-top {
+    margin-right: 0;
+    margin-top: 1em;
   }
 }
-@media (min-width: 992px) {
-  .contents {
-    width: 970px;
+@media (max-width: 400px) {
+  .contents .project-list ul li .btn-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .contents .project-list ul li .btn-list a {
+    display: flex;
+  }
+  .contents .project-list ul li .btn-list a + a {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
-@media (min-width: 1200px) {
-  .contents {
-    width: 1200px;
-  }
-}
+
+
