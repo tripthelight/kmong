@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .contents .info .btn-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .contents .info .btn-block a + a {
+    margin-top: 0.5em;
+  }
+}
+@media (min-width: 768px) {
+  .contents {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contents {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contents {
+    width: 1200px;
+  }
+}
