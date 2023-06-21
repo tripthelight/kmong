@@ -1,0 +1,23 @@
+#detail {
+  padding: 80px 150px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#detail h1, #detail h2, #detail h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+#detail .date-author {
+  font-size: 16px;
+}
+#detail .title {
+  font-size: 36px;
+  margin-top: 60px;
+}
+#detail .post {
+  font-size: 16px;
+  margin-top: 60px;
+}

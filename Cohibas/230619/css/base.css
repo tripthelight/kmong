@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: top 0.2s ease-in;
+  -moz-tap-highlight-color: top 0.2s ease-in;
+  -o-tap-highlight-color: top 0.2s ease-in;
 }
 html,
 body {
@@ -36,4 +39,12 @@ a {
 h1, h2, h3, h4, h5 {
   font-family: "Merriweather", serif;
   font-weight: 700;
+}
+.btn-type-1:hover,
+.btn-type-1:active {
+  background-color: white;
+  border: solid 1px #b0c5d2;
+  -moz-box-shadow: 0 1px 0 #b0c5d2;
+  -webkit-box-shadow: 0 1px 0 #b0c5d2;
+  box-shadow: 0 1px 0 #b0c5d2
 }

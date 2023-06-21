@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
   <title>메인</title>
 
   <!-- font -->
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/base.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/contents.css" />
+  <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/mediaQuery.css" />
 </head>
@@ -20,81 +21,83 @@
   <div id="container">
     <!-- s : header -->
     <header>
-      <h1><a href="#" title="메인화면으로 이동">Jami Gibbs</a></h1>
+      <h1><a href="./index.html">Jami Gibbs</a></h1>
       <div class="nav">
-        <a href="#">Home</a>
+        <a href="./index.html">Home</a>
       </div>
     </header>
     <!-- e : header -->
 
     <!-- s : contents -->
     <div class="contents">
-      <!-- 소개 -->
-      <div class="info">
-        <h2>Hello. I'm Jami Gibbs.</h2>
-        <p>I'm a software developer and designer from Chicago creating useful things for the web.</p>
-        <div class="btn-block">
-          <a href="#" class="btn-twitter">Twitter</a>
-          <a href="#" class="btn-github">Github</a>
-          <a href="#" class="btn-medium">Medium</a>
+      <div class="content">
+        <!-- 소개 -->
+        <div class="info">
+          <h2>Hello. I'm Jami Gibbs.</h2>
+          <p>I'm a software developer and designer from Chicago creating useful things for the web.</p>
+          <div class="btn-block">
+            <a href="#" class="btn-twitter btn-type-1">Twitter</a>
+            <a href="#" class="btn-github btn-type-1">Github</a>
+            <a href="#" class="btn-medium btn-type-1">Medium</a>
+          </div>
         </div>
-      </div>
 
-      <!-- 화살표 -->
-      <a href="javascript:void(0);" class="btn-down-arrow" onclick="return false"></a>
+        <!-- 화살표 -->
+        <a href="#LATEST_WORK" class="btn-down-arrow"></a>
 
-      <!-- Latest Work -->
-      <div class="latest-work">
-        <h2>Latest Work</h2>
-        <p>I have experience in a number of different areas. Have a look at what I'm working on right now.</p>
-      </div>
+        <!-- Latest Work -->
+        <div id="LATEST_WORK" class="latest-work">
+          <h2>Latest Work</h2>
+          <p>I have experience in a number of different areas. Have a look at what I'm working on right now.</p>
+        </div>
 
-      <!-- 
-        * 개별 프로젝트 소개 리스트
-        * 이미지가 오른쪽인 경우 type-left
-        * 이미지가 왼쪽인 경우 type-right
-      -->
-      <div class="project-list">
-        <ul class="type-left">
-          <li>
-            <div class="inner">
-              <h3>Phantom</h3>
-              <p>A minimalist Jekyll theme that you're looking at it right now</p>
-              <div class="btn-list">
-                <a href="#">Visit Project</a>
-                <a href="#">see detail</a>
+        <!-- 
+          * 개별 프로젝트 소개 리스트
+          * 이미지가 오른쪽인 경우 type-left
+          * 이미지가 왼쪽인 경우 type-right
+        -->
+        <div class="project-list">
+          <ul class="type-left">
+            <li>
+              <div class="inner">
+                <h3>Phantom</h3>
+                <p>A minimalist Jekyll theme that you're looking at it right now</p>
+                <div class="btn-list">
+                  <a href="#" class="btn-type-1">Visit Project</a>
+                  <a href="./detail/detail.html" class="btn-type-1">See Detail</a>
+                </div>
+                <div class="tags">
+                  <span>Jekyll</span>
+                  <span>Sass</span>
+                  <span>Bootstrap</span>
+                </div>
               </div>
-              <div class="tags">
-                <span>Jekyll</span>
-                <span>Sass</span>
-                <span>Bootstrap</span>
+            </li>
+            <li>
+              TEXT
+            </li>
+          </ul>
+          <ul class="type-right">
+            <li>
+              <div class="inner">
+                <h3>Phantom</h3>
+                <p>A minimalist Jekyll theme that you're looking at it right now</p>
+                <div class="btn-list">
+                  <a href="#" class="btn-type-1">Visit Project</a>
+                  <a href="./detail/detail.html" class="btn-type-1">See Detail</a>
+                </div>
+                <div class="tags">
+                  <span>Jekyll</span>
+                  <span>Sass</span>
+                  <span>Bootstrap</span>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            TEXT
-          </li>
-        </ul>
-        <ul class="type-right">
-          <li>
-            <div class="inner">
-              <h3>Phantom</h3>
-              <p>A minimalist Jekyll theme that you're looking at it right now</p>
-              <div class="btn-list">
-                <a href="#">Visit Project</a>
-                <a href="#">see detail</a>
-              </div>
-              <div class="tags">
-                <span>Jekyll</span>
-                <span>Sass</span>
-                <span>Bootstrap</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            TEXT
-          </li>
-        </ul>
+            </li>
+            <li>
+              TEXT
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- s : footer -->

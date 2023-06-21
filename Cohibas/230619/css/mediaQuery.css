@@ -1,14 +1,14 @@
-@media (max-width: 1920px) {
+@media only screen and (max-width: 1920px) {
   .contents {
     width: 1200px;
   }
 }
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .contents {
     width: 970px;
   }
 }
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .contents {
     width: 750px;
   }
@@ -27,10 +27,30 @@
     margin-top: 1em;
     padding-left: calc(5em + 20px);
   }
+  .contents .project-list ul li .btn-list a {
+    flex-grow: 0;
+    flex-basis: auto;
+    padding: 13px 35px;
+  }
+  #detail {
+    padding: 70px 60px;
+  }
+  #detail .date-author {
+    font-size: 15px;
+  }
+  #detail .title {
+    font-size: 27px;
+    margin-top: 40px;
+  }
+  #detail .post {
+    font-size: 13px;
+    margin-top: 40px;
+  }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .contents {
     width: 100%;
+    border: 0 none;
   }
   .contents .info .btn-block {
     flex-wrap: wrap;
@@ -38,6 +58,9 @@
   }
   .contents .info .btn-block a + a {
     margin-top: 0.5em;
+  }
+  .contents .latest-work p {
+    width: 100%;
   }
   .contents .project-list ul li .inner {
     margin: 0;
@@ -55,8 +78,22 @@
     margin-right: 0;
     margin-top: 1em;
   }
+  #detail {
+    padding: 30px 20px;
+  }
+  #detail .date-author {
+    font-size: 14px;
+  }
+  #detail .title {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  #detail .post {
+    font-size: 12px;
+    margin-top: 20px;
+  }
 }
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .contents .project-list ul li .btn-list {
     width: 100%;
     flex-direction: column;

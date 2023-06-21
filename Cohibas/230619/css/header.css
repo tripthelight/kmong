@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
@@ -10,6 +10,7 @@ header {
   box-sizing: border-box;
   background-color: #f8f8f8;
   border-bottom: 1px solid #e7e7e7;
+  z-index: 100;
 }
 header h1,
 header h1 a {
@@ -27,7 +28,14 @@ header h1 a {
   align-items: center;
   justify-content: center;
   color: #777;
+  font-weight: 500;
   padding: 0 15px;
+  font-family: "Open Sans", sans-serif;
+  transition: color .2s ease-in;
+}
+header h1 a:hover,
+header h1 a:active {
+  color: #5e5e5e;
 }
 header .nav {
   display: flex;
@@ -40,4 +48,9 @@ header .nav a {
   color: #777;
   padding: 15px;
   box-sizing: border-box;
+  transition: color .2s ease-in;
+}
+header .nav a:hover,
+header .nav a:active {
+  color: #333;
 }

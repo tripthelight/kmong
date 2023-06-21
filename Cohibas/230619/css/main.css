@@ -1,0 +1,190 @@
+.contents .info {
+  width: 100%;
+  padding: 8em 15px 9em;
+  box-sizing: border-box;
+}
+.contents .info h2,
+.contents .info p,
+.contents .info .btn-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents .info h2,
+.contents .info p {
+  width: 100%;
+  text-align: center;
+}
+.contents .info h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+.contents .info p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  font-family: "Open Sans", sans-serif;
+  margin: 2em 0 4em 0;
+}
+.contents .info .btn-block a {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #2E4453;
+  font-weight: 600;
+  padding: 12px 35px;
+  border: solid 1px #d5e0e7;
+  border-radius: 4px;
+  margin: 0 0.5em;
+}
+.contents .btn-down-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 42px;
+  margin: 0 auto;
+}
+.contents .btn-down-arrow::before,
+.contents .btn-down-arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3px;
+  height: 20px;
+  background-color: #C8D7E1;
+  -webkit-transition: top 0.2s ease-in;
+  -moz-transition: top 0.2s ease-in;
+  -o-transition: top 0.2s ease-in;
+  transition: top 0.2s ease-in
+}
+.contents .btn-down-arrow::before {
+  margin-left: 6px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.contents .btn-down-arrow::after {
+  margin-left: -6px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.contents .btn-down-arrow:hover::before,
+.contents .btn-down-arrow:hover::after {
+  top: 60%;
+  background-color: #FF5B33;
+}
+.contents .latest-work {
+  margin-top: 5em;
+  padding-top: 5em;
+}
+.contents .latest-work h2,
+.contents .latest-work p {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+.contents .latest-work h2 {
+  position: relative;
+  font-size: 30px;
+}
+.contents .latest-work h2::after {
+  content: '';
+  position: absolute;
+  top: 1.35em;
+  width: 3em;
+  height: 3px;
+  background-color: #ECEFF1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+.contents .latest-work p {
+  width: 40%;
+  font-size: 1.3em;
+  line-height: 1.8;
+  margin-top: 1em;
+  box-sizing: border-box;
+}
+.contents .project-list {
+  margin-top: 4em;
+}
+.contents .project-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0;
+}
+.contents .project-list ul li {
+  flex: 1 1 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.contents .project-list ul li h3 {
+  position: relative;
+  font-size: 24px;
+}
+.contents .project-list ul li h3::after {
+  content: '';
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  width: 3em;
+  height: 3px;
+  background-color: #ECEFF1
+}
+.contents .project-list ul li p {
+  margin-top: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.8;
+}
+.contents .project-list ul li .btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(1em + 10px);
+}
+.contents .project-list ul li .btn-list a {
+  flex: 1 1 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.33;
+  padding: 13px 0;
+  border-radius: 4px;
+  color: #2E4453;
+  font-weight: 600;
+  border: solid 1px #d5e0e7;
+}
+.contents .project-list ul li .btn-list a + a {
+  margin-left: 10px;
+}
+.contents .project-list ul li .tags,
+.contents .project-list ul li .tags span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contents .project-list ul li .tags {
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+.contents .project-list ul li .tags span {
+  color: #9eb1bd;
+  background-color: #ECEFF1;
+  padding: 0.5em 1.5em;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+.contents .project-list ul li .tags span:last-child {
+  margin-right: 0;
+}
+.contents .project-list ul li .inner {
+  margin: 0 0 0 5em;
+}
+.contents .project-list ul.type-right {
+  flex-direction: row-reverse;
+}

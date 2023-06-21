@@ -20,6 +20,11 @@ footer a.btn-copyright {
   line-height: 1.8;
   padding: 10px 15px;
   margin-left: 8.3%;
+  transition: color .2s ease-in;
+}
+footer a.btn-copyright:hover,
+footer a.btn-copyright:active {
+  color: #FF5B33;
 }
 footer a.btn-top {
   position: relative;
@@ -37,6 +42,10 @@ footer a.btn-top::after {
   width: 3px;
   height: 20px;
   background-color: #C8D7E1;
+  -webkit-transition: top 0.2s ease-in;
+  -moz-transition: top 0.2s ease-in;
+  -o-transition: top 0.2s ease-in;
+  transition: top 0.2s ease-in
 }
 footer a.btn-top::before {
   margin-left: 6px;
@@ -53,4 +62,9 @@ footer a.btn-top span {
   width: 1px;
   height: 1px;
   color: transparent;
+}
+footer a.btn-top:hover::before,
+footer a.btn-top:hover::after {
+  top: 40%;
+  background-color: #FF5B33;
 }
