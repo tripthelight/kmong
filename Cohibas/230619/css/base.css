@@ -9,11 +9,11 @@ html,
 body {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
 }
 body {
   font-size: 14px;
@@ -36,7 +36,11 @@ button {
 a {
   text-decoration: none;
 }
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Merriweather", serif;
   font-weight: 700;
 }
@@ -46,5 +50,5 @@ h1, h2, h3, h4, h5 {
   border: solid 1px #b0c5d2;
   -moz-box-shadow: 0 1px 0 #b0c5d2;
   -webkit-box-shadow: 0 1px 0 #b0c5d2;
-  box-shadow: 0 1px 0 #b0c5d2
+  box-shadow: 0 1px 0 #b0c5d2;
 }

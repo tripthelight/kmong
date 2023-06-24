@@ -6,9 +6,24 @@
   justify-content: center;
   flex-direction: column;
 }
-#detail h1, #detail h2, #detail h3 {
+#detail h1,
+#detail h2,
+#detail h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+}
+#detail h2 {
+  position: relative;
+}
+#detail h2::after {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3em;
+  height: 3px;
+  background-color: #eceff1;
 }
 #detail .date-author {
   font-size: 16px;
@@ -20,4 +35,121 @@
 #detail .post {
   font-size: 16px;
   margin-top: 60px;
+}
+
+/**
+  * Table of Contents
+*/
+.tblContents {
+  margin-top: 20px;
+}
+.tblContents ul li {
+  margin-top: 6px;
+}
+.tblContents ul li a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 20px;
+  color: #808080;
+}
+.tblContents ul li a::after {
+  content: "";
+  display: none;
+  width: 0;
+  height: 0;
+}
+.tblContents ul li a:hover::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+.tblContents ul li ul {
+  display: block;
+  margin-left: 10px;
+}
+
+/**
+  * 클릭박스
+*/
+.clickbox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.clickbox a {
+  position: relative;
+}
+.clickbox a.btn-prev,
+.clickbox a.btn-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+.clickbox a.btn-prev {
+  margin-right: 10px;
+}
+.clickbox a.btn-next {
+  margin-left: 10px;
+}
+.clickbox a.btn-prev::before,
+.clickbox a.btn-prev::after,
+.clickbox a.btn-next::before,
+.clickbox a.btn-next::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  background-color: #c8d7e1;
+}
+.clickbox a.btn-prev::before {
+  margin-top: -10px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.clickbox a.btn-prev::after {
+  margin-top: 10px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.clickbox a.btn-next::before {
+  margin-top: -10px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.clickbox a.btn-next::after {
+  margin-top: 10px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.clickbox a.btn-prev:hover::before,
+.clickbox a.btn-prev:hover::after,
+.clickbox a.btn-next:hover::before,
+.clickbox a.btn-next:hover::after {
+  background-color: #ff5b33;
+}
+.clickbox a.btn-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.clickbox a.btn-home img {
+  width: 60px;
+  height: auto;
+}
+.clickbox a.btn-home {
+  filter: invert(90%) sepia(20%) saturate(165%) hue-rotate(166deg) brightness(93%) contrast(90%);
+}
+.clickbox a.btn-home:hover {
+  filter: invert(63%) sepia(66%) saturate(5985%) hue-rotate(340deg) brightness(103%) contrast(101%);
 }

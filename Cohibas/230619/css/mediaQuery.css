@@ -4,15 +4,22 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+  header {
+    padding: 0 calc((100% - 970px) / 2);
+  }
   .contents {
     width: 970px;
   }
 }
 @media only screen and (max-width: 992px) {
+  header {
+    padding: 0 calc((100% - 750px) / 2);
+  }
   .contents {
     width: 750px;
   }
-  .contents .project-list ul {
+  .contents .project-list ul,
+  .contents .project-list dl.type-right ul {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
@@ -20,12 +27,22 @@
   .contents .project-list ul li {
     width: 100%;
   }
+  .contents .project-list ul li .inner {
+    margin: 0 0 0 2em;
+  }
   .contents .project-list ul.type-right {
     flex-direction: column;
   }
   .contents .project-list ul li + li {
     margin-top: 1em;
-    padding-left: calc(5em + 20px);
+    padding-left: calc(2em + 15px);
+    padding-right: 0;
+  }
+  .contents .project-list ul li .btn-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .contents .project-list ul li .btn-list a {
     flex-grow: 0;
@@ -48,13 +65,12 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
   .contents {
     width: 100%;
     border: 0 none;
-  }
-  .contents .info .btn-block {
-    flex-wrap: wrap;
-    flex-direction: column;
   }
   .contents .info .btn-block a + a {
     margin-top: 0.5em;
@@ -62,11 +78,17 @@
   .contents .latest-work p {
     width: 100%;
   }
+  .contents .project-list {
+    padding: 0 1em;
+  }
+  .contents .project-list ul li {
+    padding: 0;
+  }
   .contents .project-list ul li .inner {
     margin: 0;
   }
   .contents .project-list ul li + li {
-    padding-left: 20px;
+    padding-left: 0;
   }
   footer {
     flex-direction: column;
@@ -93,20 +115,46 @@
     margin-top: 20px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .contents .info .btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contents .info .btn-block a + a {
+    margin: 0 0 0 10px;
+  }
+  .contents .info .btn-block a {
+    flex: 1 1 calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+    box-sizing: border-box;
+  }
+}
 @media only screen and (max-width: 400px) {
+  .contents .info p {
+    margin-bottom: 2em;
+  }
+  .contents .info .btn-block a {
+    font-size: 14px;
+  }
   .contents .project-list ul li .btn-list {
-    width: 100%;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .contents .project-list ul li .btn-list a {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    flex: 1 1 50%;
+    font-size: 14px;
   }
   .contents .project-list ul li .btn-list a + a {
-    margin-left: 0;
-    margin-top: 10px;
+    margin-left: 10px;
   }
 }
 

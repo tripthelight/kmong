@@ -7,6 +7,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding:  0 calc((100% - 1200px) / 2);
   box-sizing: border-box;
   background-color: #f8f8f8;
   border-bottom: 1px solid #e7e7e7;
@@ -29,7 +30,7 @@ header h1 a {
   justify-content: center;
   color: #777;
   font-weight: 500;
-  padding: 0 15px;
+  padding: 0 15px 0 0;
   font-family: "Open Sans", sans-serif;
   transition: color .2s ease-in;
 }
