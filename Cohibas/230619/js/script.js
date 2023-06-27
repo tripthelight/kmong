@@ -25,7 +25,7 @@ const RESIZE_SMALL = (_list) => {
     if (!LI1 || !LI2) return;
     const TEXT_EL = document.createElement("span");
     TEXT_EL.classList.add("txt");
-    TEXT_EL.innerHTML = LI2.innerHTML;
+    TEXT_EL.innerText = LI2.innerText;
     const BEFORE_EL = LI1.querySelector(".inner .tags") || LI1.querySelector(".inner .btn-list");
     if (!BEFORE_EL) return;
     INSERT_AFTER(BEFORE_EL, TEXT_EL);
@@ -48,7 +48,7 @@ const RESIZE_WIDE = (_list) => {
     const SPAN_EL = LI1.querySelector(".inner span.txt");
     if (!SPAN_EL) return;
     const TEXT_EL = document.createElement("li");
-    TEXT_EL.innerText = SPAN_EL.innerHTML;
+    TEXT_EL.innerText = SPAN_EL.innerText;
     UL_EL.appendChild(TEXT_EL);
     SPAN_EL.remove();
   }

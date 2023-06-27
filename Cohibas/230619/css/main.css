@@ -142,11 +142,6 @@
   display: block;
   margin-top: 1.5em;
 }
-.contents .project-list ul li p {
-  margin-top: 1.5em;
-  font-size: 1.3em;
-  line-height: 1.8;
-}
 .contents .project-list ul li .btn-list {
   display: flex;
   align-items: center;
